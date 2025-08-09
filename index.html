@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo - Seu Nome</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .resume {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .header p {
+      color: #777;
+      margin: 0.3rem 0;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+      color: #007BFF;
+      margin-bottom: 1rem;
+    }
+
+    .section-item {
+      margin-bottom: 1rem;
+    }
+
+    .section-item h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .section-item span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skills li {
+      background: #007BFF;
+      color: white;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .resume {
+        padding: 1rem;
+      }
+    }
+
+    .img {
+      background-size: cover;
+      background-position: center;
+      min-height: 110px;
+      width: 110px;
+      margin: auto;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 45px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .section ul li a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s;
+    }
+
+    .section ul li a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .language-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .language-list li {
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+    }
+
+    .soft-skills {
+      list-style: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .soft-skills li {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <div class="header">
+      <div class="img" id="profileImage" style="background-image: url(/Media/20241215_093154.jpg); cursor: pointer;"></div>
+
+      <h1>Erick Sandes</h1>
+      <p>Desenvolvedor Front-End | WebDesigner Pleno</p>
+      <p>Email: ericksandes14@gmail.com | Telefone: (21) 97171-9955 | Rio de Janeiro/RJ</p>
+    </div>
+
+    <div class="section">
+      <h2>Resumo Profissional</h2>
+      <p>Desenvolvedor web com mais de 4 anos de experiência em criação de interfaces modernas, responsivas e otimizadas. Especialista em HTML, CSS, JavaScript e frameworks como React, JQuery e Bootstrap.</p>
+    </div>
+
+    <div class="section">
+      <h2>Experiência Profissional</h2>
+
+      <div class="section-item">
+        <h3>Stays Software de aluguel por temporada - Desenvolvedor Front-End Pleno</h3>
+        <span>Dez 2022 - Atual</span>
+        <p>Responsável pelo desenvolvimento visual de sites para mais de 150 clientes, atuando na construção de interfaces (Desktop e Mobile), integrações com plataformas externas como Google Analytics, Tag Manager e bots de comunicação como Asksuite, entre outras soluções digitais.</p>
+      </div>
+
+      <div class="section-item">
+        <h3>Stays Software de aluguel por temporada - Estagiário Web Designer</h3>
+        <span>Mai 2022 - Dez 2022</span>
+        <p>Criação de layouts em Figma, prototipação e implementação de landing pages usando HTML/CSS.</p>
+      </div>
+    </div>
+
+    
+<div class="section">
+      <h2>Educação</h2>
+
+      <div class="section-item">
+        <h3>Análise e desenvolvimentos de sistemas</h3>
+        <span>Faculdade Anhanguera - 2020 a 2022</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Idiomas</h2>
+      <ul class="language-list">
+        <li><strong>Português:</strong> Nativo</li>
+        <li><strong>Inglês:</strong> Fluente</li>
+      </ul>
+    </div>
+
+    <div class="section skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>Figma</li>
+        <li>Google Tag Manager</li>
+        <li>Motion Design</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projetos em Destaque</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><a href="https://www.supervou.com/pt/" target="_blank">supervou.com</a></li>
+        <li><a href="https://afacil.stays.net/" target="_blank">afacil.stays.net</a></li>
+        <li><a href="https://www.labrume.com.br/" target="_blank">labrume.com.br</a></li>
+        <li><a href="https://www.mahnai.com/pt/" target="_blank">mahnai.com</a></li>
+        <li><a href="https://www.redibuk.pe/es/" target="_blank">redibuk.pe</a></li>
+        <li><a href="https://www.wehome.com.br/" target="_blank">wehome.com.br</a></li>
+        <li><a href="https://edpac.stays.net/pt/" target="_blank">edpac.stays.net</a></li>
+        <li><a href="https://sereiaa.stays.net/pt/" target="_blank">sereiaa.stays.net</a></li>
+        <li><a href="https://www.coastlinehospedagens.com.br/" target="_blank">coastlinehospedagens.com.br</a></li>
+        <li><a href="https://www.imocasas.com.br" target="_blank">imocasas.com.br</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Competências Pessoais</h2>
+      <ul class="soft-skills">
+        <li>Organização e atenção aos detalhes</li>
+        <li>Boa comunicação e trabalho em equipe</li>
+        <li>Proatividade e pensamento crítico</li>
+        <li>Capacidade de adaptação a novos desafios</li>
+        <li>Autogerenciamento de tarefas e prazos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const profileImage = document.getElementById("profileImage");
+  const closeBtn = document.querySelector(".close");
+
+  profileImage.addEventListener("click", () => {
+    const bgImage = profileImage.style.backgroundImage;
+    const imageUrl = bgImage.slice(5, -2); // Remove url("...") wrapper
+    modal.style.display = "block";
+    modalImg.src = imageUrl;
+  });
+
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  window.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>
